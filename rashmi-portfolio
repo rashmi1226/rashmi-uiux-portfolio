@@ -1,0 +1,89 @@
+export default function Portfolio() {
+  return (
+    <div className="min-h-screen bg-gray-100 text-gray-900 p-6">
+      <div className="max-w-5xl mx-auto">
+        <div className="bg-white shadow-xl rounded-3xl p-10">
+          <div className="text-center">
+            <h1 className="text-5xl font-bold">Rashmi Gatagat</h1>
+            <p className="text-xl text-gray-600 mt-3">
+              UI/UX Designer | Creative Thinker | B.Tech Engineering Student
+            </p>
+            <p className="mt-4 text-gray-500">
+              Final Year B.Tech Engineering student passionate about creating modern, user-friendly digital experiences with clean interfaces, creative layouts, and intuitive user journeys.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mt-12">
+            <div className="bg-gray-50 rounded-2xl p-6 shadow-sm">
+              <h2 className="text-2xl font-semibold mb-4">Contact Information</h2>
+              <p><strong>Email:</strong> rashmigatagate83@gmail.com</p>
+              <p><strong>Phone:</strong> 8830147458</p>
+              <p><strong>Location:</strong> Maharashtra, India</p>
+            </div>
+
+            <div className="bg-gray-50 rounded-2xl p-6 shadow-sm">
+              <h2 className="text-2xl font-semibold mb-4">Education</h2>
+              <p><strong>B.Tech Engineering</strong></p>
+              <p>Currently in 4th Year</p>
+              <p>CGPA: 8.64</p>
+            </div>
+          </div>
+
+          <div className="mt-12 bg-gray-50 rounded-2xl p-6 shadow-sm">
+            <h2 className="text-2xl font-semibold mb-4">UI/UX Skills</h2>
+            <div className="flex flex-wrap gap-3">
+              {[
+                "UI/UX Design",
+                "Figma",
+                "Canva",
+                "Wireframing", "Prototyping", "User Research", "Responsive Design", "Typography", "Color Theory", "WordPress", "Design Systems",
+                "Problem Solving",
+              ].map((skill) => (
+                <span
+                  key={skill}
+                  className="px-4 py-2 bg-black text-white rounded-full text-sm"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-12 bg-gray-50 rounded-2xl p-6 shadow-sm">
+            <h2 className="text-2xl font-semibold mb-4">UI/UX Design Projects</h2>
+
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-xl font-medium">Mobile App UI Design</h3>
+                <p className="text-gray-600 mt-2">
+                  Designed modern and user-friendly mobile application interfaces in Figma with clean layouts, interactive screens, and responsive components.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-medium">Website Redesign Project</h3>
+                <p className="text-gray-600 mt-2">
+                  Redesigned website interfaces with improved navigation, visual hierarchy, typography, and user experience for better usability.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-medium">WordPress Portfolio Website</h3>
+                <p className="text-gray-600 mt-2">
+                  Created responsive WordPress portfolio websites with modern UI elements, smooth layouts, and optimized user interaction.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-12 bg-black text-white rounded-2xl p-8 text-center">
+            <h2 className="text-3xl font-bold">Career Objective</h2>
+            <p className="mt-4 text-gray-300 max-w-3xl mx-auto">
+              Seeking opportunities in UI/UX design to apply creativity, design thinking, and problem-solving skills while building engaging and user-focused digital products.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
